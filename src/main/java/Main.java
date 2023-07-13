@@ -36,10 +36,10 @@ public class Main {
         NASA nasa = mapper.readValue(
                 response.getEntity().getContent(), NASA.class);
 
-        HttpGet requestNASA = new HttpGet(nasa.getUrl());
+        HttpGet requestNASA = new HttpGet(nasa.getHdurl());
         CloseableHttpResponse responseNASA = httpClient.execute(requestNASA);
 
-        String[] parts = nasa.getUrl().split("/");
+        String[] parts = nasa.getHdurl().split("/");
         String nameFile = parts[6];
 
         Path path = Paths.get(nameFile);
