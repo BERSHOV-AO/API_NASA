@@ -34,7 +34,7 @@ import java.nio.file.Paths;
  */
 
 
-public class Main {
+public class   Main {
 
     public static final String REMOTE_SERVICE_URL = "https://api.nasa.gov/planetary/" +
             "apod?api_key=DO11mbGtFLwBtnbrzTcepxy9Z8b8bTGAxzRdkDXo";
